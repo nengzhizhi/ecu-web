@@ -1,0 +1,170 @@
+body {
+    margin: 0 auto;
+    font: 12px/1.5 "Microsoft YaHei",DengXian,Arial,Simsun,SimHei,sans-serif;
+}
+
+.top-bar {
+	background: #fff;
+	position: relative;
+	z-index: 19;
+	width: 100%;
+}
+.top-bar .wrapper {
+	height: 48px;
+	border-bottom: 1px solid #efefef;
+}
+
+.top-bar .link {
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+	color: #484848;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.top-bar .site-links {
+	float: left;
+}
+
+.nav-bar {
+	background: #fff;
+	border-bottom: 1px solid #ccc;	
+}
+
+.nav-bar .nav-box{
+	position: relative;
+	height: 78px;
+	z-index: 10;	
+}
+
+.nav-bar .logo {
+	float: left;
+	width: 165px;
+	height: 50px;
+	margin-top: 13.5px;
+}
+
+.nav-bar .logo img {
+    display: block;
+}
+
+.banner{
+	position: relative;
+	z-index: 1;
+}
+
+.banner .slider-bg {
+	width: 100%;
+	height: 1;
+}
+
+.banner .slider-wrap {
+	height: 600px;
+	position: relative;
+	z-index: 1;
+	overflow: visible;
+}
+
+.banner .slider-bg .slider-item.active {
+	z-index: -1;
+}
+
+.banner .slider-bg .slider-item {
+	z-index: -2;
+}
+
+.banner .slider-bg img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1920px;
+	height: 600px;
+	margin-left: -960px;
+	margin-top: -300px;
+	z-index: 1;
+}
+
+.special {
+	position: relative;
+	margin-top: -20px;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 9;
+}
+.special .scroll-main{
+	position: relative;
+	height: 180px;	
+}
+.special .scroll-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 9999px;
+}
+.special .mods {
+	float: left;
+}
+#special .mods .mod:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 287px;
+    height: 250px;
+    margin-left: -143.5px;
+    background: url(./images/special-shadow_8926c22.png) no-repeat center bottom;
+}
+.special .mods .mod img {
+	position: relative;
+	display: block;
+	width: 256px;
+	height: 160px;
+	border: #fff 7px solid;
+	background: #E8E8E8;
+	text-align: center;
+	color: #716D6D;
+	line-height: 150px;
+}
+
+.reservation-bar{
+	display: none;
+	position: fixed;
+	height: 50px;
+	background: rgba(0,0,0,.6);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.1);
+	z-index: 9;	
+}
+
+.reservation-bar .form {
+	width: 830px;
+	margin: 0 auto;
+}
+
+#reservation-bar .form .ui-form-item {
+	display: table-cell;
+	height: 50px;
+	vertical-align: middle;
+	padding-right: 10px;
+	position: relative;
+}
+
+#reservation-bar .form .input-wrap, #reservation .form .input-wrap {
+	display: inline-block;
+	font-size: 0;
+	border-radius: 2px;
+	background: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.layout{
+	margin: 0 auto;
+	width: 1170px;
+}
