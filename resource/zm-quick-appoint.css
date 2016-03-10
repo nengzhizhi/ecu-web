@@ -1,0 +1,523 @@
+#reservation-bar,#reservation,#n-footer {
+	-wekbkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0)
+}
+
+#reservation-bar .ui-button,#reservation .ui-button,#n-footer .ui-button {
+	display: inline-block;
+	width: 100px;
+	height: 32px;
+	padding: 0;
+	line-height: 32px;
+	background: #ff5b5a;
+	border: 0;
+	border-radius: 2px;
+	color: #fff;
+	transition: all ease .2s;
+	-webkit-transition: all ease .2s
+}
+
+#reservation-bar .ui-button[disabled],#reservation .ui-button[disabled],#n-footer .ui-button[disabled] {
+	transition: none;
+	-webkit-transition: none;
+	background: #ccc!important
+}
+
+#reservation-bar .ui-button:hover,#reservation .ui-button:hover,#n-footer .ui-button:hover {
+	background-color: #f24343
+}
+
+#reservation-bar .form,#reservation .form {
+	position: relative
+}
+
+#reservation-bar .form .img,#reservation .form .img {
+	position: absolute;
+	bottom: 2px;
+	left: -168px
+}
+
+#reservation-bar .form .img img,#reservation .form .img img {
+	display: block
+}
+
+#reservation-bar .form #rightimg,#reservation .form #rightimg {
+	position: absolute;
+	right: -155px;
+	top: 3px
+}
+
+#reservation-bar .form input,#reservation .form input,#reservation-bar .form select,#reservation .form select {
+	outline: 0!important;
+	box-shadow: none!important;
+	box-sizing: content-box
+}
+
+#reservation-bar .form input,#reservation .form input {
+	font-size: 14px;
+	padding: 0 10px;
+	height: 30px;
+	border: 1px solid #ededed;
+	outline: 0;
+	border-radius: 2px;
+	background: #f5f5f5
+}
+
+#reservation-bar .form input:disabled,#reservation .form input:disabled,#reservation-bar .form textarea:disabled,#reservation .form textarea:disabled {
+	background: #fff
+}
+
+#reservation-bar .form select,#reservation .form select {
+	height: 32px!important;
+	border: 1px solid #ededed;
+	border-radius: 2px;
+	padding: 0!important
+}
+
+#reservation-bar .form .selectric-wrapper .selectric,#reservation .form .selectric-wrapper .selectric {
+	border: 1px solid #ededed
+}
+
+#reservation-bar .form .close-btn,#reservation .form .close-btn {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 26px;
+	right: 15px;
+	top: 15px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ccc;
+	transition: all ease .2s;
+	-webkit-transition: all ease .2s
+}
+
+#reservation-bar .form .close-btn:hover,#reservation .form .close-btn:hover {
+	color: #666
+}
+
+#reservation-bar .form .ui-form-item,#reservation .form .ui-form-item {
+	position: relative;
+	margin-top: 0!important
+}
+
+#reservation-bar .form .ui-form-item:after,#reservation .form .ui-form-item:after {
+	display: none!important
+}
+
+#reservation-bar .form .ui-form-item.ui-form-item-error select,#reservation .form .ui-form-item.ui-form-item-error select,#reservation-bar .form .ui-form-item.ui-form-item-error .selectric-wrapper .selectric,#reservation .form .ui-form-item.ui-form-item-error .selectric-wrapper .selectric,#reservation-bar .form .ui-form-item.ui-form-item-error input,#reservation .form .ui-form-item.ui-form-item-error input {
+	border-color: #f24343
+}
+
+#reservation-bar .form .ui-form-item .ui-form-explain,#reservation .form .ui-form-item .ui-form-explain {
+	background-image: none!important
+}
+
+#reservation-bar .form .ui-form-explain,#reservation .form .ui-form-explain {
+	display: none;
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 10px;
+	background-color: #f24343;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 2px;
+	left: 0;
+	top: -14px;
+	z-index: 2
+}
+
+#reservation-bar .form .ui-form-explain a,#reservation .form .ui-form-explain a {
+	color: #9acd32
+}
+
+#reservation-bar .form .ui-form-explain:after,#reservation .form .ui-form-explain:after {
+	position: absolute;
+	border: 0 solid transparent;
+	border-width: 4px 4px 0;
+	border-top-color: #f24343;
+	content: "";
+	bottom: -4px;
+	left: 10px
+}
+
+#reservation-bar .form .selectric-wrapper .label,#reservation .form .selectric-wrapper .label,#reservation-bar .form .selectric-wrapper .button,#reservation .form .selectric-wrapper .button {
+	height: 30px;
+	line-height: 30px
+}
+
+#reservation-bar .form .input-wrap,#reservation .form .input-wrap {
+	display: inline-block;
+	font-size: 0;
+	border-radius: 2px;
+	background: #fff;
+	position: relative;
+	z-index: 1
+}
+
+#reservation-bar .form .input-wrap .placeholder,#reservation .form .input-wrap .placeholder {
+	font-size: 12px;
+	z-index: -1
+}
+
+.lt-ie9 #reservation-bar .input-wrap input,.lt-ie9 #reservation .input-wrap input {
+	line-height: 30px;
+	background-color: transparent
+}
+
+#reservation-bar {
+	display: none;
+	position: fixed;
+	height: 50px;
+	background: rgba(0,0,0,.6);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.1);
+	z-index: 9
+}
+
+#reservation-bar .form {
+	width: 830px;
+	margin: 0 auto
+}
+
+#reservation-bar .form .ui-form-item {
+	display: table-cell;
+	height: 50px;
+	vertical-align: middle;
+	padding-right: 10px;
+	position: relative
+}
+
+#reservation-bar .form .ui-form-item.ui-form-item-error .ui-form-explain {
+	display: block;
+	animation: showTip000 ease .2s;
+	-webkit-animation: showTip000 ease .2s
+}
+
+#reservation-bar .form input,#reservation-bar .form select,#reservation-bar .form .selectric-wrapper .selectric {
+	border-color: #ededed
+}
+
+#reservation-bar .form input,#reservation-bar .form select,#reservation-bar .form .selectric-wrapper {
+	width: 210px!important;
+	background: #fff
+}
+
+#reservation-bar .form slect {
+	padding: 0
+}
+
+#reservation-bar .form .ui-button {
+	color: #fff;
+	transition: none;
+	-webkit-transition: none;
+	background: #f75653;
+	background: -moz-linear-gradient(top,#f75653 0,#ec504d 26%,#d3423f 63%,#c73b38 100%);
+	background: -webkit-linear-gradient(top,#f75653 0,#ec504d 26%,#d3423f 63%,#c73b38 100%);
+	background: linear-gradient(to bottom,#f75653 0,#ec504d 26%,#d3423f 63%,#c73b38 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f75653', endColorstr='#c73b38', GradientType=0)
+}
+
+#reservation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1999;
+	display: none
+}
+
+#reservation.show {
+	display: block
+}
+
+#reservation.show:after {
+	background: rgba(0,0,0,.6);
+	animation: showMask000 ease .6s;
+	-webkit-animation: showMask000 ease .6s
+}
+
+#reservation:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	content: "";
+	z-index: -1;
+	background: rgba(0,0,0,0)
+}
+
+#reservation .dialog {
+	position: absolute;
+	z-index: 1;
+	width: 830px;
+	height: 280px;
+	background: #fff;
+	box-shadow: 0 0 4px 1px rgba(0,0,0,.1);
+	bottom: -100%;
+	left: 50%;
+	margin-left: -415px;
+	overflow: hidden
+}
+
+#reservation .form-wrap {
+	height: 100%;
+	overflow: hidden
+}
+
+#reservation .form-wrap .p {
+	width: 536px;
+	height: 280px;
+	float: left;
+	background: url(/static/desktop/widget/quick-appointment/img/reservation_p_0_8fe1466.jpg) no-repeat center
+}
+
+#reservation .form {
+	position: absolute;
+	width: 240px;
+	height: 100%;
+	left: 560px
+}
+
+#reservation .form .form-item-wrap {
+	height: 100%;
+	width: 100%;
+	overflow: hidden
+}
+
+#reservation .form .form-items {
+	height: 100%;
+	position: relative;
+	z-index: 2
+}
+
+#reservation .form .ui-form-item {
+	margin-bottom: 12px;
+	width: 100%
+}
+
+#reservation .form .ui-form-item .ui-form-explain {
+	top: -24px
+}
+
+#reservation .form .ui-form-item.ui-form-item-error:hover .ui-form-explain {
+	display: block;
+	animation: showTip000 ease .2s;
+	-webkit-animation: showTip000 ease .2s
+}
+
+#reservation .form h2 {
+	padding-top: 15px;
+	color: #252525;
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 15px
+}
+
+#reservation .form .btn-wrap {
+	margin-bottom: 0;
+	position: absolute;
+	width: 100%;
+	bottom: 15px;
+	text-align: right
+}
+
+#reservation .form select {
+	width: 238px!important
+}
+
+#reservation .form input {
+	width: 218px
+}
+
+#reservation .form .slogan-wrap {
+	width: 536px;
+	height: 100%;
+	position: absolute;
+	left: -560px;
+	top: 0;
+	z-index: 1
+}
+
+#reservation .form .slogan {
+	position: absolute;
+	color: #fff;
+	text-align: left;
+	top: 0;
+	height: 100%;
+	left: 250px;
+	width: 100%
+}
+
+#reservation .form .slogan .text-wrap {
+	display: table-cell;
+	vertical-align: middle;
+	height: 260px
+}
+
+#reservation .form .slogan h3 {
+	font-size: 20px
+}
+
+#reservation .form .slogan h3:after {
+	margin-top: 10px;
+	display: block;
+	content: "";
+	width: 80px;
+	border-top: 1px solid #fff
+}
+
+#reservation .form .slogan p {
+	padding-top: 10px;
+	font-size: 12px
+}
+
+#reservation .step-1 {
+	display: none
+}
+
+#reservation .step-2 {
+	display: none
+}
+
+#reservation .step-3 {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	*zoom: 1
+}
+
+#reservation .step-3:before,#reservation .step-3:after {
+	display: table;
+	content: "";
+	line-height: 0
+}
+
+#reservation .step-3:after {
+	clear: both
+}
+
+#reservation .step-3 .col-l,#reservation .step-3 .col-r {
+	float: left;
+	height: 100%
+}
+
+#reservation .step-3 .col-l .text-wrap,#reservation .step-3 .col-r .text-wrap {
+	height: 280px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center
+}
+
+#reservation .step-3 .col-l,#reservation .step-3 .col-l .text-wrap {
+	width: 300px
+}
+
+#reservation .step-3 .col-l .icon {
+	display: block;
+	margin: 0 auto;
+	background: url(/static/desktop/widget/quick-appointment/img/reservation_ok_0_5ef0392.png?__sprite) no-repeat;
+	width: 90px;
+	height: 90px
+}
+
+#reservation .step-3 .col-l strong {
+	display: block;
+	padding-top: 20px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400
+}
+
+#reservation .step-3 .col-r,#reservation .step-3 .col-r .text-wrap {
+	width: 530px
+}
+
+#reservation .step-3 .col-r h3 {
+	font-size: 20px;
+	color: #666;
+	line-height: 50px
+}
+
+#reservation .step-3 .col-r p {
+	color: #999;
+	font-size: 12px;
+	padding: 0 20px;
+	line-height: 20px;
+	margin-bottom: 10px
+}
+
+#reservation .step-3 .col-r .mobile {
+	color: #000;
+	font-weight: 700
+}
+
+#reservation .step-3 .col-r .ui-button {
+	margin-top: 10px
+}
+
+#reservation .step-3 .how-use-jrb {
+	position: absolute;
+	width: 400px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	top: 45px;
+	right: 60px;
+	border-radius: 4px;
+	display: none
+}
+
+#reservation .step-3 .how-use-jrb.show {
+	display: block
+}
+
+#reservation .step-3 .how-use-jrb:before,#reservation .step-3 .how-use-jrb:after {
+	content: "";
+	position: absolute;
+	border: 0 solid transparent;
+	border-width: 8px 8px 0;
+	border-top-color: #ccc;
+	z-index: 1;
+	bottom: -9px;
+	left: 50%;
+	margin-left: -8px
+}
+
+#reservation .step-3 .how-use-jrb:before {
+	z-index: 2;
+	border-top-color: #fff;
+	bottom: -8px
+}
+
+#reservation .close-btn {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	font-size: 26px;
+	right: 10px;
+	top: 10px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ccc;
+	transition: all ease .2s;
+	-webkit-transition: all ease .2s
+}
+
+#reservation .close-btn:hover {
+	color: #666
+}
